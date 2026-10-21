@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import VideoThumbnail from "@/components/VideoThumbnail";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import FadeOnScroll from "@/components/FadeOnScroll";
 
 export const metadata: Metadata = {
   title: "The Kahlert Café | Inclusive Farm-to-Able Café in Sparks, MD",
@@ -73,14 +74,14 @@ export default function Home() {
                 }}
               />
               <div className="relative">
-                <div className="w-12 h-0.5 bg-white mb-6" />
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-left">
+                <div className="w-12 h-0.5 bg-white mb-6 animate-fade-in" />
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-left animate-fade-in-delay-1">
                   Welcome to<br />The Kahlert Café
                 </h1>
-                <p className="text-lg md:text-xl mb-8 leading-relaxed text-left">
+                <p className="text-lg md:text-xl mb-8 leading-relaxed text-left animate-fade-in-delay-2">
                   At The Kahlert Café, every purchase supports meaningful employment and opportunity for people with intellectual and developmental disabilities. We’re proud to serve great coffee and food with an even greater purpose - brewing confidence, connection, and a more inclusive community with every cup.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-3">
                   <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0F6397] px-6 py-3 font-semibold text-center hover:bg-stone-100">ORDER ONLINE</a>
                   <Link href="/about" className="border-2 border-white text-white px-6 py-3 font-semibold text-center hover:bg-white/10">OUR MISSION</Link>
                 </div>
@@ -91,87 +92,97 @@ export default function Home() {
 
         {/* Inclusive Café Open */}
         <section className="py-16 bg-stone-50 text-center">
-          <div className="container mx-auto px-4">
-            <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] mb-3">Inclusive Café Now Open in Sparks, MD</h2>
-            <p className="text-lg text-stone-700 mb-8">Watch the Kahlert’s Café’s Exciting Ribbon Cutting Celebration</p>
-            <VideoThumbnail />
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0F6397] border border-[#0F6397] px-8 py-3 font-semibold hover:bg-blue-50">ORDER ONLINE</a>
-              <Link href="/about" className="border-2 border-stone-400 text-stone-700 px-8 py-3 font-semibold hover:bg-stone-100">ABOUT US</Link>
+          <FadeOnScroll>
+            <div className="container mx-auto px-4">
+              <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] mb-3">Inclusive Café Now Open in Sparks, MD</h2>
+              <p className="text-lg text-stone-700 mb-8">Watch the Kahlert’s Café’s Exciting Ribbon Cutting Celebration</p>
+              <VideoThumbnail />
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0F6397] border border-[#0F6397] px-8 py-3 font-semibold hover:bg-blue-50">ORDER ONLINE</a>
+                <Link href="/about" className="border-2 border-stone-400 text-stone-700 px-8 py-3 font-semibold hover:bg-stone-100">ABOUT US</Link>
+              </div>
             </div>
-          </div>
+          </FadeOnScroll>
         </section>
 
         {/* Farm-to-Able */}
         <section className="bg-stone-900 text-white py-16">
-          <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 relative aspect-[4/3]">
-              <Image src="/tkc-home-food-1.jpg" alt="Farm-to-table food at The Kahlert Café" fill className="object-cover" />
+          <FadeOnScroll>
+            <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+              <div className="order-2 md:order-1 relative aspect-[4/3]">
+                <Image src="/tkc-home-food-1.jpg" alt="Farm-to-table food at The Kahlert Café" fill className="object-cover" />
+              </div>
+              <div className="order-1 md:order-2">
+                <div className="w-12 h-0.5 bg-white mb-6" />
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">A Unique Farm-to-Able Culinary Experience</h2>
+                <p className="text-lg leading-relaxed mb-8">
+                  Savor fresh, locally sourced meals, artisanal baked goods, and specialty coffee at The Kahlert Café. Our inclusive community café in Sparks, Maryland serves delicious food while creating meaningful job training and employment opportunities for adults with intellectual and developmental disabilities.
+                </p>
+                <Link href="/menu" className="inline-block border-2 border-white px-6 py-3 font-semibold hover:bg-white hover:text-stone-900">BROWSE MENU</Link>
+              </div>
             </div>
-            <div className="order-1 md:order-2">
-              <div className="w-12 h-0.5 bg-white mb-6" />
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">A Unique Farm-to-Able Culinary Experience</h2>
-              <p className="text-lg leading-relaxed mb-8">
-                Savor fresh, locally sourced meals, artisanal baked goods, and specialty coffee at The Kahlert Café. Our inclusive community café in Sparks, Maryland serves delicious food while creating meaningful job training and employment opportunities for adults with intellectual and developmental disabilities.
-              </p>
-              <Link href="/menu" className="inline-block border-2 border-white px-6 py-3 font-semibold hover:bg-white hover:text-stone-900">BROWSE MENU</Link>
-            </div>
-          </div>
+          </FadeOnScroll>
         </section>
 
         {/* Crafted with Love */}
         <section className="bg-stone-900 text-white py-16">
-          <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="w-12 h-0.5 bg-white mb-6" />
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Crafted with Love and Purpose</h2>
-              <p className="text-lg leading-relaxed mb-8">
-                More than just a café, The Kahlert Café is a welcoming space of inclusion and opportunity right here in Sparks, MD. Discover how we empower adults with disabilities through hands-on culinary training while building community one delicious dish at a time.
-              </p>
-              <Link href="/about" className="inline-block border-2 border-white px-6 py-3 font-semibold hover:bg-white hover:text-stone-900">MORE ABOUT US</Link>
+          <FadeOnScroll>
+            <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="w-12 h-0.5 bg-white mb-6" />
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Crafted with Love and Purpose</h2>
+                <p className="text-lg leading-relaxed mb-8">
+                  More than just a café, The Kahlert Café is a welcoming space of inclusion and opportunity right here in Sparks, MD. Discover how we empower adults with disabilities through hands-on culinary training while building community one delicious dish at a time.
+                </p>
+                <Link href="/about" className="inline-block border-2 border-white px-6 py-3 font-semibold hover:bg-white hover:text-stone-900">MORE ABOUT US</Link>
+              </div>
+              <div className="relative aspect-[4/3]">
+                <Image src="/tkc-home-food-2.jpg" alt="Team member preparing food at The Kahlert Café" fill className="object-cover" />
+              </div>
             </div>
-            <div className="relative aspect-[4/3]">
-              <Image src="/tkc-home-food-2.jpg" alt="Team member preparing food at The Kahlert Café" fill className="object-cover" />
-            </div>
-          </div>
+          </FadeOnScroll>
         </section>
 
         {/* Where Inclusion Comes to Life */}
         <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] text-center mb-4">Where Inclusion Comes to Life</h2>
-            <p className="text-center mb-2"><a href="https://www.facebook.com/profile.php?id=61588407959697" target="_blank" rel="noopener noreferrer" className="text-[#0F6397] font-semibold hover:underline">Follow Us on Facebook!</a></p>
-            <p className="text-center text-stone-600 max-w-2xl mx-auto mb-10">
-              Step inside and see the dedicated team, farm-to-table flavors, and genuine connections that make The Kahlert Café a place of purpose, growth, and belonging in Sparks, Maryland.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-8">
-              {fbImages.map((src, i) => (
-                <div key={i} className="relative aspect-square">
-                  <Image src={src} alt={`The Kahlert Café team and community photo ${i + 1}`} fill className="object-cover" />
-                </div>
-              ))}
+          <FadeOnScroll>
+            <div className="container mx-auto px-4">
+              <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] text-center mb-4">Where Inclusion Comes to Life</h2>
+              <p className="text-center mb-2"><a href="https://www.facebook.com/profile.php?id=61588407959697" target="_blank" rel="noopener noreferrer" className="text-[#0F6397] font-semibold hover:underline">Follow Us on Facebook!</a></p>
+              <p className="text-center text-stone-600 max-w-2xl mx-auto mb-10">
+                Step inside and see the dedicated team, farm-to-table flavors, and genuine connections that make The Kahlert Café a place of purpose, growth, and belonging in Sparks, Maryland.
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-8">
+                {fbImages.map((src, i) => (
+                  <div key={i} className="relative aspect-square">
+                    <Image src={src} alt={`The Kahlert Café team and community photo ${i + 1}`} fill className="object-cover" />
+                  </div>
+                ))}
+              </div>
+              <div className="text-center">
+                <a href="https://www.facebook.com/profile.php?id=61588407959697" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#0F6397] text-white px-8 py-3 font-semibold hover:bg-[#0d5580]">FOLLOW THE KAHLERT CAFE</a>
+              </div>
             </div>
-            <div className="text-center">
-              <a href="https://www.facebook.com/profile.php?id=61588407959697" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#0F6397] text-white px-8 py-3 font-semibold hover:bg-[#0d5580]">FOLLOW THE KAHLERT CAFE</a>
-            </div>
-          </div>
+          </FadeOnScroll>
         </section>
 
         {/* Final CTA */}
         <section className="relative py-20" style={{backgroundImage: "url(/tkc-cta-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}>
           <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 container mx-auto px-4 max-w-lg">
-            <div className="bg-white p-8 md:p-10">
-              <div className="w-12 h-0.5 bg-[#0F6397] mb-6" />
-              <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6">An Inclusive Culinary Experience.<br />Visit us or order online.</h2>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-[#0F6397] text-white px-6 py-3 font-semibold text-center hover:bg-[#0d5580]">ORDER ONLINE</a>
-                <Link href="/contact" className="border-2 border-stone-300 text-stone-700 px-6 py-3 font-semibold text-center hover:bg-stone-50">CONTACT</Link>
+          <FadeOnScroll>
+            <div className="relative z-10 container mx-auto px-4 max-w-lg">
+              <div className="bg-white p-8 md:p-10">
+                <div className="w-12 h-0.5 bg-[#0F6397] mb-6" />
+                <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6">An Inclusive Culinary Experience.<br />Visit us or order online.</h2>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-[#0F6397] text-white px-6 py-3 font-semibold text-center hover:bg-[#0d5580]">ORDER ONLINE</a>
+                  <Link href="/contact" className="border-2 border-stone-300 text-stone-700 px-6 py-3 font-semibold text-center hover:bg-stone-50">CONTACT</Link>
+                </div>
               </div>
             </div>
-          </div>
+          </FadeOnScroll>
         </section>
 
         {/* Footer */}
