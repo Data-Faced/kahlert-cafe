@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fffbeb;
+  --background: #ffffff;
   --foreground: #1c1917;
 }
 
@@ -12,10 +12,14 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html,
 body {
-  background: var(--background);
+  background: #ffffff;
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Tasteful fade-in animations */
