@@ -35,17 +35,33 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-center justify-center text-white" style={{backgroundImage: "url(/tkc-hero-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30" />
-        <div className="relative z-10 container mx-auto px-4 max-w-2xl">
-          <div className="w-12 h-0.5 bg-white mb-6" />
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Welcome to<br />The Kahlert Café</h1>
-          <p className="text-lg md:text-xl mb-8 leading-relaxed">
-            At The Kahlert Café, every purchase supports meaningful employment and opportunity for people with intellectual and developmental disabilities. We’re proud to serve great coffee and food with an even greater purpose - brewing confidence, connection, and a more inclusive community with every cup.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0F6397] px-6 py-3 font-semibold text-center hover:bg-stone-100">ORDER ONLINE</a>
-            <Link href="/about" className="border-2 border-white text-white px-6 py-3 font-semibold text-center hover:bg-white/10">OUR MISSION</Link>
+      <section className="relative min-h-[80vh] flex items-center text-white" style={{backgroundImage: "url(/tkc-hero-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center right"}}>
+        {/* Stronger left gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
+        
+        <div className="relative z-10 container mx-auto px-6 md:px-8 lg:px-12 w-full">
+          {/* Feathered dark text background */}
+          <div className="max-w-xl lg:max-w-2xl relative">
+            <div 
+              className="absolute -inset-8 md:-inset-12 -z-10 rounded-3xl"
+              style={{
+                background: "radial-gradient(ellipse at center, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0.15) 70%, transparent 100%)",
+                filter: "blur(8px)",
+              }}
+            />
+            <div className="relative">
+              <div className="w-12 h-0.5 bg-white mb-6" />
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-left">
+                Welcome to<br />The Kahlert Café
+              </h1>
+              <p className="text-lg md:text-xl mb-8 leading-relaxed text-left">
+                At The Kahlert Café, every purchase supports meaningful employment and opportunity for people with intellectual and developmental disabilities. We’re proud to serve great coffee and food with an even greater purpose - brewing confidence, connection, and a more inclusive community with every cup.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0F6397] px-6 py-3 font-semibold text-center hover:bg-stone-100">ORDER ONLINE</a>
+                <Link href="/about" className="border-2 border-white text-white px-6 py-3 font-semibold text-center hover:bg-white/10">OUR MISSION</Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
