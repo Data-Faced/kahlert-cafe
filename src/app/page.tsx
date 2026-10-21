@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import VideoThumbnail from "@/components/VideoThumbnail";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FadeOnScroll from "@/components/FadeOnScroll";
+import MobileNav from "@/components/MobileNav";
 
 export const metadata: Metadata = {
   title: "The Kahlert Café | Inclusive Farm-to-Able Café in Sparks, MD",
@@ -56,7 +57,7 @@ export default function Home() {
             </nav>
             <div className="flex items-center gap-3">
               <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="hidden sm:inline-block bg-[#0F6397] hover:bg-[#0d5580] text-white px-4 py-2 text-sm font-semibold">ORDER ONLINE</a>
-              <button className="lg:hidden text-[#0F6397] text-2xl">☰</button>
+              <MobileNav />
             </div>
           </div>
         </header>
