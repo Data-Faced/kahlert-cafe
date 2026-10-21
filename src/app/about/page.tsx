@@ -11,21 +11,15 @@ export const metadata: Metadata = {
 };
 
 const teamMembers = [
-  { name: "Anthony", img: "/Anthony%20(1).JPG" },
-  { name: "Cameron", img: "/Cameron%20(1).JPG" },
-  { name: "Carina", img: "/Carina%20(1).JPG" },
-  { name: "Donna", img: "/Donna%20(1).JPG" },
-  { name: "Emily", img: "/Emily%20(1).JPG" },
-  { name: "Isabel", img: "/Isabel%20(1).JPG" },
-  { name: "Karlin", img: "/Karlin%20(1).JPG" },
-  { name: "Kelsey", img: "/Kelsey%20(1).JPG" },
-  { name: "Lisa", img: "/Lisa%20(1).JPG" },
-  { name: "Liza", img: "/Liza%20(1).JPG" },
-  { name: "Matthew", img: "/Matthew%20(1).JPG" },
-  { name: "Nicole", img: "/Nicole%20(1).JPG" },
-  { name: "Susie", img: "/Susie%20(1).JPG" },
-  { name: "Tim", img: "/Tim%20(1).JPG" },
-  { name: "Timothy", img: "/Timothy%20(1).JPG" },
+  { name: "Anthony", img: "/Anthony%20(1)%205.35.06%E2%80%AFPM.JPG" },
+  { name: "Donna", img: "/Donna%20(1)%205.35.06%E2%80%AFPM.JPG" },
+  { name: "Lisa", img: "/Lisa%20(1)%205.35.06%E2%80%AFPM.JPG" },
+  { name: "Liza", img: "/Liza%20(1)%205.35.06%E2%80%AFPM.JPG" },
+  { name: "Matthew", img: "/Matthew%20(1)%205.35.06%E2%80%AFPM.JPG" },
+  { name: "Nicole", img: "/Nicole%20(1)%205.35.06%E2%80%AFPM.JPG" },
+  { name: "Susie", img: "/Susie%20(1)%205.35.06%E2%80%AFPM.JPG" },
+  { name: "Tim", img: "/Tim%20(1)%205.35.06%E2%80%AFPM.JPG" },
+  { name: "Timothy", img: "/Timothy%20(1)%205.35.06%E2%80%AFPM.JPG" },
 ];
 
 export default function AboutPage() {
@@ -50,7 +44,7 @@ export default function AboutPage() {
         </div>
       </header>
 
-      {/* Hero — same structure as homepage */}
+      {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center text-white" style={{backgroundImage: "url(/tkc-hero-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center right"}}>
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
 
@@ -89,7 +83,7 @@ export default function AboutPage() {
             <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] text-center mb-16">Meet Our Team</h2>
 
-            {/* Barbara — larger as superior */}
+            {/* Barbara — note: optimized version not found, using placeholder path */}
             <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
               <div className="order-2 md:order-1">
                 <p className="text-stone-700 leading-relaxed text-base md:text-lg">
@@ -97,7 +91,7 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="order-1 md:order-2 text-center">
-                <div className="relative w-56 h-72 md:w-64 md:h-80 mx-auto mb-4">
+                <div className="relative w-56 h-72 md:w-64 md:h-80 mx-auto mb-4 bg-stone-200">
                   <Image
                     src="/Headshot%20Barbara%20Hineline.JPG"
                     alt="Barbara Hineline"
@@ -113,12 +107,12 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Brendan — slightly smaller */}
+            {/* Brendan */}
             <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
               <div className="text-center">
                 <div className="relative w-48 h-64 md:w-56 md:h-72 mx-auto mb-4">
                   <Image
-                    src="/Brendan%20headshot%20(1).JPG"
+                    src="/Brendan%20headshot%20(1)%205.35.06%E2%80%AFPM.JPG"
                     alt="Brendan Bangay"
                     fill
                     className="object-cover"
@@ -137,7 +131,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Team Grid */}
+            {/* Team Grid — only members with optimized images */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {teamMembers.map((member) => (
                 <div key={member.name} className="text-center">
@@ -181,32 +175,16 @@ export default function AboutPage() {
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Kahlert%20Foundation%20Check%20Presentation%20(1).jpg" alt="The Kahlert Foundation" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Kahlert%20Foundation%20Check%20Presentation%20(1)%205.35.06%E2%80%AFPM.jpg" alt="The Kahlert Foundation" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
                 <p className="text-sm font-medium">The Kahlert Foundation</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Campbell%20Foundation%20Logo%20(1).png" alt="The Campbell Foundation" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Campbell%20Foundation%20Logo%20(1)%205.35.06%E2%80%AFPM.png" alt="The Campbell Foundation" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
                 <p className="text-sm font-medium">The Campbell Foundation</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Gordon%20Family%20photo%20(1).jpg" alt="The Gordan Family" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
-                <p className="text-sm font-medium">The Gordan Family</p>
-              </div>
-              <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/IMG_0114%20(1).JPG" alt="First Financial Federal Credit Union" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
-                <p className="text-sm font-medium">First Financial Federal Credit Union</p>
-              </div>
-              <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Catalyst-NewLogo_high%20res%20(1).png" alt="Catalyst Communications" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Catalyst-NewLogo_high%20res%20(1)%205.35.06%E2%80%AFPM.png" alt="Catalyst Communications" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
                 <p className="text-sm font-medium">Catalyst Communications</p>
-              </div>
-              <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Strategic%20Factory%20check%20presentation%20(1).jpg" alt="Strategic Factory" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
-                <p className="text-sm font-medium">Strategic Factory</p>
-              </div>
-              <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Harvest%20Logo%20(1).jpg" alt="Harvest Investment Consultants" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
-                <p className="text-sm font-medium">Harvest Investment Consultants</p>
               </div>
               <div className="border border-stone-200 p-4 text-center col-span-1 sm:col-span-2 md:col-span-3">
                 <p className="text-sm font-medium text-[#0F6397] mb-3">Additional Supporters</p>
