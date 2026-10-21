@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import VideoThumbnail from "@/components/VideoThumbnail";
 
 export default function Home() {
   const fbImages = [
@@ -72,15 +73,7 @@ export default function Home() {
           <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] mb-3">Inclusive Café Now Open in Sparks, MD</h2>
           <p className="text-lg text-stone-700 mb-8">Watch the Kahlert’s Café’s Exciting Ribbon Cutting Celebration</p>
-          <div className="relative max-w-4xl mx-auto mb-8 aspect-video">
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/6xeW8So7ya8"
-              title="Kahlert Café Ribbon Cutting Celebration"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
+          <VideoThumbnail />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0F6397] border border-[#0F6397] px-8 py-3 font-semibold hover:bg-blue-50">ORDER ONLINE</a>
             <Link href="/about" className="border-2 border-stone-400 text-stone-700 px-8 py-3 font-semibold hover:bg-stone-100">ABOUT US</Link>
