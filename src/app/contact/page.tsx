@@ -34,13 +34,25 @@ export default function ContactPage() {
 
       {/* Hero / Contact Intro */}
       <section className="relative py-20 md:py-28 text-white" style={{backgroundImage: "url(/tkc-cta-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}>
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 container mx-auto px-6 text-center max-w-3xl">
-          <div className="w-12 h-0.5 bg-white mx-auto mb-6 animate-fade-in" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-delay-1">Reach Out to The Kahlert Café</h1>
-          <p className="text-lg md:text-xl text-stone-200 animate-fade-in-delay-2">
-            Submit the form below and a member of our team will get back to you as soon as possible.
-          </p>
+          {/* Centered feathered dark text background */}
+          <div className="relative inline-block max-w-2xl mx-auto px-4 py-8">
+            <div
+              className="absolute -inset-10 md:-inset-16 -z-10 rounded-3xl"
+              style={{
+                background: "radial-gradient(ellipse at center, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.1) 75%, transparent 100%)",
+                filter: "blur(12px)",
+              }}
+            />
+            <div className="relative">
+              <div className="w-12 h-0.5 bg-white mx-auto mb-6 animate-fade-in" />
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-delay-1">Reach Out to The Kahlert Café</h1>
+              <p className="text-lg md:text-xl text-stone-100 animate-fade-in-delay-2">
+                Submit the form below and a member of our team will get back to you as soon as possible.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
