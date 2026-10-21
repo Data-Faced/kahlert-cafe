@@ -15,6 +15,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "The Kahlert Café | Inclusive Farm-to-Able Café in Sparks, MD",
   description: "The Kahlert Café is an inclusive community café in Sparks, MD providing meaningful employment and culinary training for adults with intellectual and developmental disabilities. Fresh, locally sourced food and specialty coffee with purpose.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
