@@ -26,8 +26,7 @@ export default function MobileNav() {
           />
           {/* Drawer */}
           <div className="absolute right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-xl flex flex-col">
-            <div className="flex items-center justify-between px-5 py-4 border-b">
-              <span className="font-semibold text-stone-800">Menu</span>
+            <div className="flex items-center justify-end px-5 py-4 border-b">
               <button
                 type="button"
                 onClick={() => setOpen(false)}
