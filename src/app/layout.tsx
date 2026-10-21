@@ -13,8 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Kahlert Café | Inclusive Farm-to-Able Café in Sparks, MD",
-  description: "The Kahlert Café is an inclusive community café in Sparks, MD providing meaningful employment and culinary training for adults with intellectual and developmental disabilities. Fresh, locally sourced food and specialty coffee with purpose.",
+  metadataBase: new URL("https://staging.thekahlertcafe.com"),
+  title: {
+    default: "The Kahlert Café | Inclusive Farm-to-Able Café in Sparks, MD",
+    template: "%s | The Kahlert Café",
+  },
+  description:
+    "Inclusive farm-to-able community café in Sparks, Maryland. Fresh, locally sourced food and specialty coffee while providing meaningful employment and culinary training for adults with intellectual and developmental disabilities.",
+  keywords: [
+    "Kahlert Cafe",
+    "Kahlert Café Sparks MD",
+    "inclusive cafe Maryland",
+    "farm-to-able cafe",
+    "cafe employing adults with disabilities",
+    "specialty coffee Sparks MD",
+    "community cafe Baltimore County",
+    "Richcroft",
+    "job training cafe Maryland",
+    "Sparks Maryland cafe",
+  ],
+  authors: [{ name: "The Kahlert Café" }],
+  creator: "Sandish Web Solutions",
   robots: {
     index: false,
     follow: false,
@@ -25,22 +44,30 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "The Kahlert Café | Inclusive Farm-to-Able Café in Sparks, MD",
-    description: "The Kahlert Café is an inclusive community café in Sparks, MD providing meaningful employment and culinary training for adults with intellectual and developmental disabilities. Fresh, locally sourced food and specialty coffee with purpose.",
+    description:
+      "Inclusive farm-to-able community café in Sparks, Maryland. Fresh, locally sourced food and specialty coffee with purpose.",
+    url: "https://staging.thekahlertcafe.com",
+    siteName: "The Kahlert Café",
     images: [
       {
         url: "/tkc-web-preview.png",
         width: 1200,
         height: 630,
-        alt: "The Kahlert Café",
+        alt: "The Kahlert Café – Inclusive Farm-to-Able Café in Sparks, MD",
       },
     ],
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "The Kahlert Café | Inclusive Farm-to-Able Café in Sparks, MD",
-    description: "The Kahlert Café is an inclusive community café in Sparks, MD providing meaningful employment and culinary training for adults with intellectual and developmental disabilities.",
+    description:
+      "Inclusive farm-to-able community café in Sparks, Maryland providing employment and culinary training for adults with disabilities.",
     images: ["/tkc-web-preview.png"],
+  },
+  alternates: {
+    canonical: "https://staging.thekahlertcafe.com",
   },
 };
 
