@@ -150,7 +150,9 @@ export default function Home() {
           <FadeOnScroll>
             <div className="container mx-auto px-4">
               <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] text-center mb-4">Where Inclusion Comes to Life</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] text-center mb-4">
+                Where Inclusion<br className="sm:hidden" /> Comes to Life
+              </h2>
               <p className="text-center mb-2"><a href="https://www.facebook.com/profile.php?id=61588407959697" target="_blank" rel="noopener noreferrer" className="text-[#0F6397] font-semibold hover:underline">Follow Us on Facebook!</a></p>
               <p className="text-center text-stone-600 max-w-2xl mx-auto mb-10">
                 Step inside and see the dedicated team, farm-to-table flavors, and genuine connections that make The Kahlert Café a place of purpose, growth, and belonging in Sparks, Maryland.
