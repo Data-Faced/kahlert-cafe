@@ -23,6 +23,25 @@ export const metadata: Metadata = {
       follow: false,
     },
   },
+  openGraph: {
+    title: "The Kahlert Café | Inclusive Farm-to-Able Café in Sparks, MD",
+    description: "The Kahlert Café is an inclusive community café in Sparks, MD providing meaningful employment and culinary training for adults with intellectual and developmental disabilities. Fresh, locally sourced food and specialty coffee with purpose.",
+    images: [
+      {
+        url: "/tkc-web-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "The Kahlert Café",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Kahlert Café | Inclusive Farm-to-Able Café in Sparks, MD",
+    description: "The Kahlert Café is an inclusive community café in Sparks, MD providing meaningful employment and culinary training for adults with intellectual and developmental disabilities.",
+    images: ["/tkc-web-preview.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
