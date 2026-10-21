@@ -10,19 +10,19 @@ export default function Home() {
             <div className="text-2xl font-serif text-amber-900">The</div>
             <div className="flex flex-col leading-tight">
               <span className="text-xl font-bold text-amber-900 tracking-tight">KAHLERT</span>
-              <span className="text-sm font-semibold text-blue-700">CAFÉ</span>
+              <span className="text-sm font-semibold text-[#0F6397]">CAFÉ</span>
             </div>
-            <span className="text-xs text-blue-600 ml-1">RICHCROFT</span>
+            <span className="text-xs text-[#0F6397] ml-1">RICHCROFT</span>
           </div>
           <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-stone-700">
-            <Link href="/" className="hover:text-blue-700">HOME</Link>
-            <Link href="/menu" className="hover:text-blue-700">MENU</Link>
-            <Link href="/about" className="hover:text-blue-700">ABOUT</Link>
-            <Link href="/contact" className="hover:text-blue-700">CONTACT</Link>
+            <Link href="/" className="hover:text-[#0F6397]">HOME</Link>
+            <Link href="/menu" className="hover:text-[#0F6397]">MENU</Link>
+            <Link href="/about" className="hover:text-[#0F6397]">ABOUT</Link>
+            <Link href="/contact" className="hover:text-[#0F6397]">CONTACT</Link>
           </nav>
           <div className="flex items-center gap-3">
-            <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="hidden sm:inline-block bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 text-sm font-semibold">ORDER ONLINE</a>
-            <button className="lg:hidden text-blue-700 text-2xl">☰</button>
+            <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="hidden sm:inline-block bg-[#0F6397] hover:bg-[#0d5580] text-white px-4 py-2 text-sm font-semibold">ORDER ONLINE</a>
+            <button className="lg:hidden text-[#0F6397] text-2xl">☰</button>
           </div>
         </div>
       </header>
@@ -37,7 +37,7 @@ export default function Home() {
             At The Kahlert Café, every purchase supports meaningful employment and opportunity for people with intellectual and developmental disabilities. We’re proud to serve great coffee and food with an even greater purpose - brewing confidence, connection, and a more inclusive community with every cup.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-white text-blue-700 px-6 py-3 font-semibold text-center hover:bg-stone-100">ORDER ONLINE</a>
+            <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0F6397] px-6 py-3 font-semibold text-center hover:bg-stone-100">ORDER ONLINE</a>
             <Link href="/about" className="border-2 border-white text-white px-6 py-3 font-semibold text-center hover:bg-white/10">OUR MISSION</Link>
           </div>
         </div>
@@ -46,15 +46,15 @@ export default function Home() {
       {/* Inclusive Café Open */}
       <section className="py-16 bg-stone-50 text-center">
         <div className="container mx-auto px-4">
-          <div className="w-16 h-0.5 bg-blue-700 mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-3">Inclusive Café Now Open in Sparks, MD</h2>
+          <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] mb-3">Inclusive Café Now Open in Sparks, MD</h2>
           <p className="text-lg text-stone-700 mb-8">Watch the Kahlert’s Café’s Exciting Ribbon Cutting Celebration</p>
           <div className="relative max-w-4xl mx-auto mb-8 bg-stone-300 aspect-video flex items-center justify-center">
             <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-3xl text-stone-700">▶</div>
             <span className="absolute bottom-4 text-sm text-stone-500">[Ribbon Cutting Video / Image]</span>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-white text-blue-700 border border-blue-700 px-8 py-3 font-semibold hover:bg-blue-50">ORDER ONLINE</a>
+            <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0F6397] border border-[#0F6397] px-8 py-3 font-semibold hover:bg-blue-50">ORDER ONLINE</a>
             <Link href="/about" className="border-2 border-stone-400 text-stone-700 px-8 py-3 font-semibold hover:bg-stone-100">ABOUT US</Link>
           </div>
         </div>
@@ -97,9 +97,9 @@ export default function Home() {
       {/* Where Inclusion Comes to Life */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="w-16 h-0.5 bg-blue-700 mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 text-center mb-4">Where Inclusion Comes to Life</h2>
-          <p className="text-center mb-2"><a href="https://www.facebook.com/profile.php?id=61588407959697" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-semibold hover:underline">Follow Us on Facebook!</a></p>
+          <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] text-center mb-4">Where Inclusion Comes to Life</h2>
+          <p className="text-center mb-2"><a href="https://www.facebook.com/profile.php?id=61588407959697" target="_blank" rel="noopener noreferrer" className="text-[#0F6397] font-semibold hover:underline">Follow Us on Facebook!</a></p>
           <p className="text-center text-stone-600 max-w-2xl mx-auto mb-10">
             Step inside and see the dedicated team, farm-to-table flavors, and genuine connections that make The Kahlert Café a place of purpose, growth, and belonging in Sparks, Maryland.
           </p>
@@ -109,7 +109,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center">
-            <a href="https://www.facebook.com/profile.php?id=61588407959697" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-700 text-white px-8 py-3 font-semibold hover:bg-blue-800">FOLLOW THE KAHLERT CAFE</a>
+            <a href="https://www.facebook.com/profile.php?id=61588407959697" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#0F6397] text-white px-8 py-3 font-semibold hover:bg-[#0d5580]">FOLLOW THE KAHLERT CAFE</a>
           </div>
         </div>
       </section>
@@ -119,10 +119,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 container mx-auto px-4 max-w-lg">
           <div className="bg-white p-8 md:p-10">
-            <div className="w-12 h-0.5 bg-blue-700 mb-6" />
-            <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6">An Inclusive Culinary Experience.<br />Visit us or order online.</h2>
+            <div className="w-12 h-0.5 bg-[#0F6397] mb-6" />
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6">An Inclusive Culinary Experience.<br />Visit us or order online.</h2>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-blue-700 text-white px-6 py-3 font-semibold text-center hover:bg-blue-800">ORDER ONLINE</a>
+              <a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="bg-[#0F6397] text-white px-6 py-3 font-semibold text-center hover:bg-[#0d5580]">ORDER ONLINE</a>
               <Link href="/contact" className="border-2 border-stone-300 text-stone-700 px-6 py-3 font-semibold text-center hover:bg-stone-50">CONTACT</Link>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function Home() {
           </div>
           <div>
             <p className="font-semibold mb-2">HOURS & LOCATION</p>
-            <p className="text-blue-700">OPEN: MON - FRI (8AM - 3PM)</p>
+            <p className="text-[#0F6397]">OPEN: MON - FRI (8AM - 3PM)</p>
             <p className="text-red-600">CLOSED: SAT & SUN</p>
             <p className="mt-2">53 Loveton Circle, Suite #112<br />Sparks, MD 21152</p>
           </div>
@@ -156,8 +156,8 @@ export default function Home() {
         <div className="container mx-auto px-4 mt-8 pt-6 border-t border-stone-300 flex flex-col md:flex-row justify-between items-center text-stone-500">
           <p>© 2026 The Kahlert Café – A Richcroft Farm-to-Able Enterprise. All Rights Reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="https://www.facebook.com/profile.php?id=61588407959697" className="hover:text-blue-700">f</a>
-            <a href="#" className="hover:text-blue-700">in</a>
+            <a href="https://www.facebook.com/profile.php?id=61588407959697" className="hover:text-[#0F6397]">f</a>
+            <a href="#" className="hover:text-[#0F6397]">in</a>
           </div>
         </div>
       </footer>
