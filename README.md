@@ -27,4 +27,4 @@ Connect this repository to Vercel for automatic deployments. Staging is availabl
 - `src/app/page.tsx` — Homepage
 - Tailwind CSS for styling
 
-Built by Sandish Web Solutions.
+Built by Sandish Web Solutions. Last updated for staging deploy.
