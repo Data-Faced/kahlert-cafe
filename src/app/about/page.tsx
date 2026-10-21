@@ -52,11 +52,9 @@ export default function AboutPage() {
 
       {/* Hero — same structure as homepage */}
       <section className="relative min-h-[80vh] flex items-center text-white" style={{backgroundImage: "url(/tkc-hero-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center right"}}>
-        {/* Stronger left gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
 
         <div className="relative z-10 container mx-auto px-6 md:px-8 lg:px-12 w-full">
-          {/* Feathered dark text background */}
           <div className="max-w-xl lg:max-w-2xl relative">
             <div
               className="absolute -inset-8 md:-inset-12 -z-10 rounded-3xl"
@@ -100,7 +98,15 @@ export default function AboutPage() {
               </div>
               <div className="order-1 md:order-2 text-center">
                 <div className="relative w-56 h-72 md:w-64 md:h-80 mx-auto mb-4">
-                  <Image src="/Headshot%20Barbara%20Hineline.JPG" alt="Barbara Hineline" fill className="object-cover" />
+                  <Image
+                    src="/Headshot%20Barbara%20Hineline.JPG"
+                    alt="Barbara Hineline"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 224px, 256px"
+                    quality={70}
+                    priority
+                  />
                 </div>
                 <p className="font-semibold text-[#0F6397] text-lg md:text-xl">Barbara Hineline</p>
                 <p className="text-sm md:text-base text-stone-600">Café Training Manager</p>
@@ -111,7 +117,15 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
               <div className="text-center">
                 <div className="relative w-48 h-64 md:w-56 md:h-72 mx-auto mb-4">
-                  <Image src="/Brendan%20headshot%20(1).JPG" alt="Brendan Bangay" fill className="object-cover" />
+                  <Image
+                    src="/Brendan%20headshot%20(1).JPG"
+                    alt="Brendan Bangay"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 192px, 224px"
+                    quality={70}
+                    priority
+                  />
                 </div>
                 <p className="font-semibold text-[#0F6397] text-base md:text-lg">Brendan Bangay</p>
                 <p className="text-sm text-stone-600">Asst. Café Manager</p>
@@ -128,7 +142,14 @@ export default function AboutPage() {
               {teamMembers.map((member) => (
                 <div key={member.name} className="text-center">
                   <div className="relative aspect-[3/4] mb-3 bg-stone-200">
-                    <Image src={member.img} alt={member.name} fill className="object-cover" />
+                    <Image
+                      src={member.img}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                      quality={65}
+                    />
                   </div>
                   <p className="font-medium text-[#0F6397]">{member.name}</p>
                 </div>
@@ -159,33 +180,32 @@ export default function AboutPage() {
             </div>
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {/* Order matching original page */}
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Kahlert%20Foundation%20Check%20Presentation%20(1).jpg" alt="The Kahlert Foundation" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Kahlert%20Foundation%20Check%20Presentation%20(1).jpg" alt="The Kahlert Foundation" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
                 <p className="text-sm font-medium">The Kahlert Foundation</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Campbell%20Foundation%20Logo%20(1).png" alt="The Campbell Foundation" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Campbell%20Foundation%20Logo%20(1).png" alt="The Campbell Foundation" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
                 <p className="text-sm font-medium">The Campbell Foundation</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Gordon%20Family%20photo%20(1).jpg" alt="The Gordan Family" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Gordon%20Family%20photo%20(1).jpg" alt="The Gordan Family" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
                 <p className="text-sm font-medium">The Gordan Family</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/IMG_0114%20(1).JPG" alt="First Financial Federal Credit Union" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/IMG_0114%20(1).JPG" alt="First Financial Federal Credit Union" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
                 <p className="text-sm font-medium">First Financial Federal Credit Union</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Catalyst-NewLogo_high%20res%20(1).png" alt="Catalyst Communications" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Catalyst-NewLogo_high%20res%20(1).png" alt="Catalyst Communications" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
                 <p className="text-sm font-medium">Catalyst Communications</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Strategic%20Factory%20check%20presentation%20(1).jpg" alt="Strategic Factory" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Strategic%20Factory%20check%20presentation%20(1).jpg" alt="Strategic Factory" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
                 <p className="text-sm font-medium">Strategic Factory</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Harvest%20Logo%20(1).jpg" alt="Harvest Investment Consultants" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Harvest%20Logo%20(1).jpg" alt="Harvest Investment Consultants" fill className="object-contain" sizes="(max-width: 768px) 50vw, 33vw" quality={70} /></div>
                 <p className="text-sm font-medium">Harvest Investment Consultants</p>
               </div>
               <div className="border border-stone-200 p-4 text-center col-span-1 sm:col-span-2 md:col-span-3">
