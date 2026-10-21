@@ -45,7 +45,7 @@ export default function AboutPage() {
       </header>
 
       {/* Hero */}
-      <section className="relative min-h-[80vh] flex items-center text-white" style={{backgroundImage: "url(/tkc-hero-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center right"}}>
+      <section className="relative min-h-[80vh] flex items-center text-white py-16 md:py-20 lg:py-0" style={{backgroundImage: "url(/tkc-hero-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center right"}}>
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
 
         <div className="relative z-10 container mx-auto px-6 md:px-8 lg:px-12 w-full">
@@ -57,7 +57,7 @@ export default function AboutPage() {
                 filter: "blur(8px)",
               }}
             />
-            <div className="relative">
+            <div className="relative py-6 md:py-8">
               <div className="w-12 h-0.5 bg-white mb-6 animate-fade-in" />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-left animate-fade-in-delay-1">
                 About The<br />Kahlert Café
@@ -83,7 +83,7 @@ export default function AboutPage() {
             <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] text-center mb-16">Meet Our Team</h2>
 
-            {/* Barbara — note: optimized version not found, using placeholder path */}
+            {/* Barbara */}
             <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
               <div className="order-2 md:order-1">
                 <p className="text-stone-700 leading-relaxed text-base md:text-lg">
@@ -131,7 +131,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Team Grid — only members with optimized images */}
+            {/* Team Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {teamMembers.map((member) => (
                 <div key={member.name} className="text-center">
