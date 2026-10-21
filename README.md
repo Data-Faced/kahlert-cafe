@@ -21,7 +21,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000).
 
 ## Deployment
-Connect this repository to Vercel for automatic deployments. Staging URL will be available on `*.vercel.app`.
+Connect this repository to Vercel for automatic deployments. Staging is available at https://staging.thekahlertcafe.com.
 
 ## Project Structure
 - `src/app/page.tsx` — Homepage
