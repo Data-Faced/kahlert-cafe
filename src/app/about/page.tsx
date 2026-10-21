@@ -11,20 +11,21 @@ export const metadata: Metadata = {
 };
 
 const teamMembers = [
-  { name: "Campbell", img: "/tkc-team-campbell.jpg" },
-  { name: "Carina", img: "/tkc-team-carina.jpg" },
-  { name: "Donna", img: "/tkc-team-donna.jpg" },
-  { name: "Timothy", img: "/tkc-team-timothy.jpg" },
-  { name: "Isabel", img: "/tkc-team-isabel.jpg" },
-  { name: "Karlin", img: "/tkc-team-karlin.jpg" },
-  { name: "Kelsey", img: "/tkc-team-kelsey.jpg" },
-  { name: "Lisa", img: "/tkc-team-lisa.jpg" },
-  { name: "Liza", img: "/tkc-team-liza.jpg" },
-  { name: "Susie", img: "/tkc-team-susie.jpg" },
-  { name: "Tim", img: "/tkc-team-tim.jpg" },
-  { name: "Nicole", img: "/tkc-team-nicole.jpg" },
-  { name: "Matthew", img: "/tkc-team-matthew.jpg" },
-  { name: "Emily", img: "/tkc-team-emily.jpg" },
+  { name: "Anthony", img: "/Anthony%20(1).JPG" },
+  { name: "Cameron", img: "/Cameron%20(1).JPG" },
+  { name: "Carina", img: "/Carina%20(1).JPG" },
+  { name: "Donna", img: "/Donna%20(1).JPG" },
+  { name: "Emily", img: "/Emily%20(1).JPG" },
+  { name: "Isabel", img: "/Isabel%20(1).JPG" },
+  { name: "Karlin", img: "/Karlin%20(1).JPG" },
+  { name: "Kelsey", img: "/Kelsey%20(1).JPG" },
+  { name: "Lisa", img: "/Lisa%20(1).JPG" },
+  { name: "Liza", img: "/Liza%20(1).JPG" },
+  { name: "Matthew", img: "/Matthew%20(1).JPG" },
+  { name: "Nicole", img: "/Nicole%20(1).JPG" },
+  { name: "Susie", img: "/Susie%20(1).JPG" },
+  { name: "Tim", img: "/Tim%20(1).JPG" },
+  { name: "Timothy", img: "/Timothy%20(1).JPG" },
 ];
 
 export default function AboutPage() {
@@ -94,7 +95,7 @@ export default function AboutPage() {
               </div>
               <div className="order-1 md:order-2 text-center">
                 <div className="relative w-48 h-60 mx-auto mb-4">
-                  <Image src="/tkc-team-barbara.jpg" alt="Barbara Hineline" fill className="object-cover" />
+                  <Image src="/Headshot%20Barbara%20Hineline.JPG" alt="Barbara Hineline" fill className="object-cover" />
                 </div>
                 <p className="font-semibold text-[#0F6397]">Barbara Hineline</p>
                 <p className="text-sm text-stone-600">Café Training Manager</p>
@@ -105,7 +106,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
               <div className="text-center">
                 <div className="relative w-48 h-60 mx-auto mb-4">
-                  <Image src="/tkc-team-brendan.jpg" alt="Brendan Bangay" fill className="object-cover" />
+                  <Image src="/Brendan%20headshot%20(1).JPG" alt="Brendan Bangay" fill className="object-cover" />
                 </div>
                 <p className="font-semibold text-[#0F6397]">Brendan Bangay</p>
                 <p className="text-sm text-stone-600">Asst. Café Manager</p>
@@ -153,36 +154,31 @@ export default function AboutPage() {
             </div>
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {/* Placeholder donor cards — replace src with actual images once pushed */}
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/tkc-donor-kahlert.jpg" alt="The Kahlert Foundation" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Kahlert%20Foundation%20Check%20Presentation%20(1).jpg" alt="The Kahlert Foundation" fill className="object-contain" /></div>
                 <p className="text-sm font-medium">The Kahlert Foundation</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/tkc-donor-campbell.jpg" alt="The Campbell Foundation" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Campbell%20Foundation%20Logo%20(1).png" alt="The Campbell Foundation" fill className="object-contain" /></div>
                 <p className="text-sm font-medium">The Campbell Foundation</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/tkc-donor-gordan.jpg" alt="The Gordan Family" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Gordon%20Family%20photo%20(1).jpg" alt="The Gordan Family" fill className="object-contain" /></div>
                 <p className="text-sm font-medium">The Gordan Family</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/tkc-donor-first-financial.jpg" alt="First Financial Federal Credit Union" fill className="object-contain" /></div>
-                <p className="text-sm font-medium">First Financial Federal Credit Union</p>
-              </div>
-              <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/tkc-donor-catalyst.jpg" alt="Catalyst Communications" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Catalyst-NewLogo_high%20res%20(1).png" alt="Catalyst Communications" fill className="object-contain" /></div>
                 <p className="text-sm font-medium">Catalyst Communications</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/tkc-donor-strategic.jpg" alt="Strategic Factory" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Strategic%20Factory%20check%20presentation%20(1).jpg" alt="Strategic Factory" fill className="object-contain" /></div>
                 <p className="text-sm font-medium">Strategic Factory</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
-                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/tkc-donor-harvest.jpg" alt="Harvest Investment Consultants" fill className="object-contain" /></div>
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Harvest%20Logo%20(1).jpg" alt="Harvest Investment Consultants" fill className="object-contain" /></div>
                 <p className="text-sm font-medium">Harvest Investment Consultants</p>
               </div>
-              <div className="border border-stone-200 p-4 text-center col-span-1 sm:col-span-2">
+              <div className="border border-stone-200 p-4 text-center col-span-1 sm:col-span-2 md:col-span-3">
                 <p className="text-sm font-medium text-[#0F6397] mb-2">Additional Supporters</p>
                 <div className="text-xs text-stone-600 space-y-1">
                   <p>Richard Hook • Donna Cossentino • The Christmas Project – Bob Hodges</p>
