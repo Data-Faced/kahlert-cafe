@@ -1,19 +1,26 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
+  const fbImages = [
+    "/tkc-home-fb-1.jpg",
+    "/tkc-home-fb-2.jpg",
+    "/tkc-home-fb-3.jpeg",
+    "/tkc-home-fb-4.jpg",
+    "/tkc-home-fb-5.jpeg",
+    "/tkc-home-fb-6.jpg",
+    "/tkc-home-fb-7.jpg",
+    "/tkc-home-fb-8.jpeg",
+  ];
+
   return (
     <div className="min-h-screen bg-white text-stone-900">
       {/* Header */}
       <header className="bg-white border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="text-2xl font-serif text-amber-900">The</div>
-            <div className="flex flex-col leading-tight">
-              <span className="text-xl font-bold text-amber-900 tracking-tight">KAHLERT</span>
-              <span className="text-sm font-semibold text-[#0F6397]">CAFÉ</span>
-            </div>
-            <span className="text-xs text-[#0F6397] ml-1">RICHCROFT</span>
-          </div>
+          <Link href="/" className="flex items-center">
+            <Image src="/tkc-header-logo.png" alt="The Kahlert Café" width={180} height={60} priority />
+          </Link>
           <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-stone-700">
             <Link href="/" className="hover:text-[#0F6397]">HOME</Link>
             <Link href="/menu" className="hover:text-[#0F6397]">MENU</Link>
@@ -28,7 +35,7 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-stone-800 text-white">
+      <section className="relative min-h-[70vh] flex items-center justify-center text-white" style={{backgroundImage: "url(/tkc-hero-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}>
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30" />
         <div className="relative z-10 container mx-auto px-4 max-w-2xl">
           <div className="w-12 h-0.5 bg-white mb-6" />
@@ -68,8 +75,8 @@ export default function Home() {
       {/* Farm-to-Able */}
       <section className="bg-stone-900 text-white py-16">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1 bg-stone-700 aspect-[4/3] flex items-center justify-center text-stone-400">
-            [Food Image]
+          <div className="order-2 md:order-1 relative aspect-[4/3]">
+            <Image src="/tkc-home-food-1.jpg" alt="Farm-to-table food" fill className="object-cover" />
           </div>
           <div className="order-1 md:order-2">
             <div className="w-12 h-0.5 bg-white mb-6" />
@@ -93,8 +100,8 @@ export default function Home() {
             </p>
             <Link href="/about" className="inline-block border-2 border-white px-6 py-3 font-semibold hover:bg-white hover:text-stone-900">MORE ABOUT US</Link>
           </div>
-          <div className="bg-stone-700 aspect-[4/3] flex items-center justify-center text-stone-400">
-            [Team / Kitchen Image]
+          <div className="relative aspect-[4/3]">
+            <Image src="/tkc-home-food-2.jpg" alt="Team in the kitchen" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -109,8 +116,10 @@ export default function Home() {
             Step inside and see the dedicated team, farm-to-table flavors, and genuine connections that make The Kahlert Café a place of purpose, growth, and belonging in Sparks, Maryland.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-8">
-            {[1,2,3,4,5,6,7,8].map(i => (
-              <div key={i} className="bg-stone-200 aspect-square flex items-center justify-center text-xs text-stone-500">Photo {i}</div>
+            {fbImages.map((src, i) => (
+              <div key={i} className="relative aspect-square">
+                <Image src={src} alt={`Team photo ${i + 1}`} fill className="object-cover" />
+              </div>
             ))}
           </div>
           <div className="text-center">
@@ -120,7 +129,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="relative py-20 bg-stone-800">
+      <section className="relative py-20" style={{backgroundImage: "url(/tkc-cta-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 container mx-auto px-4 max-w-lg">
           <div className="bg-white p-8 md:p-10">
@@ -138,7 +147,7 @@ export default function Home() {
       <footer className="bg-stone-100 py-12 text-sm">
         <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8">
           <div>
-            <div className="font-serif text-amber-900 text-xl mb-2">The Kahlert Café</div>
+            <Image src="/tkc-header-logo.png" alt="The Kahlert Café" width={160} height={50} className="mb-2" />
             <p className="text-stone-600">A Richcroft Farm-to-Able Enterprise</p>
           </div>
           <div>
