@@ -116,7 +116,7 @@ export default function Home() {
           <div>
             <h4 className="text-white text-xl font-bold mb-4">Connect</h4>
             <a href="https://www.facebook.com/profile.php?id=61588407959697" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400">Facebook</a>
-            <p className="mt-4 text-sm">© {new Date().getFullYear()} The Kahlert Café. All rights reserved.</p>
+            <p className="mt-4 text-sm">© 2026 The Kahlert Café. All rights reserved.</p>
           </div>
         </div>
       </footer>
