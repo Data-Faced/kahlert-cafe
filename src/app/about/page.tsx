@@ -50,25 +50,30 @@ export default function AboutPage() {
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="relative py-20 md:py-28 text-white" style={{backgroundImage: "url(/tkc-hero-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}>
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 container mx-auto px-6 max-w-4xl">
-          <div className="relative inline-block max-w-2xl px-6 py-8 md:px-10 md:py-10">
+      {/* Hero — same structure as homepage */}
+      <section className="relative min-h-[80vh] flex items-center text-white" style={{backgroundImage: "url(/tkc-hero-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center right"}}>
+        {/* Stronger left gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
+
+        <div className="relative z-10 container mx-auto px-6 md:px-8 lg:px-12 w-full">
+          {/* Feathered dark text background */}
+          <div className="max-w-xl lg:max-w-2xl relative">
             <div
-              className="absolute -inset-8 md:-inset-14 -z-10 rounded-3xl"
+              className="absolute -inset-8 md:-inset-12 -z-10 rounded-3xl"
               style={{
-                background: "radial-gradient(ellipse at center, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.15) 75%, transparent 100%)",
-                filter: "blur(12px)",
+                background: "radial-gradient(ellipse at center, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0.15) 70%, transparent 100%)",
+                filter: "blur(8px)",
               }}
             />
             <div className="relative">
               <div className="w-12 h-0.5 bg-white mb-6 animate-fade-in" />
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-delay-1">About The Kahlert Café</h1>
-              <p className="text-lg leading-relaxed mb-6 animate-fade-in-delay-2">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-left animate-fade-in-delay-1">
+                About The<br />Kahlert Café
+              </h1>
+              <p className="text-lg md:text-xl mb-6 leading-relaxed text-left animate-fade-in-delay-2">
                 At The Kahlert Café, it’s all about <strong>Coffee and Inclusion</strong>. Our Mission – The Kahlert Café is where coffee, community, and inclusion meet. We provide paid training and employment opportunities that help people with intellectual and developmental disabilities gain valuable workplace skills and confidence. Every meal served and every cup poured is a celebration of ability, opportunity, and belonging.
               </p>
-              <p className="text-lg leading-relaxed mb-8 animate-fade-in-delay-2">
+              <p className="text-lg md:text-xl mb-8 leading-relaxed text-left animate-fade-in-delay-2">
                 Whether you’re stopping by for a quick pick-me-up or taking your favorite food to go, every purchase supports meaningful employment and opportunity for people with intellectual and developmental disabilities.
               </p>
               <Link href="/contact" className="inline-block border-2 border-white text-white px-6 py-3 font-semibold hover:bg-white hover:text-stone-900 transition-colors animate-fade-in-delay-3">
