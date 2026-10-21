@@ -86,29 +86,29 @@ export default function AboutPage() {
             <div className="w-16 h-0.5 bg-[#0F6397] mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-[#0F6397] text-center mb-16">Meet Our Team</h2>
 
-            {/* Barbara */}
-            <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
+            {/* Barbara — larger as superior */}
+            <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
               <div className="order-2 md:order-1">
-                <p className="text-stone-700 leading-relaxed">
+                <p className="text-stone-700 leading-relaxed text-base md:text-lg">
                   For nearly 40 years, Café Training Manager, Barbara Hineline thrived in the energy of the restaurant business, learning that the heart of any great experience is genuine human connection and a watchful eye for the details that matter. This past year, Barbara has pivoted that passion toward a new mission: supporting adults with disabilities. At The Kahlert Café, Barbara leads a remarkable team of staff with intellectual and developmental disabilities who are the true heart of everything we do. Each team member brings their own talents, perspectives, and passion to the café, creating an environment filled with pride, purpose, and possibility. Together, this team is redefining what inclusion looks like - one cup of coffee, one connection, and one opportunity at a time.
                 </p>
               </div>
               <div className="order-1 md:order-2 text-center">
-                <div className="relative w-48 h-60 mx-auto mb-4">
+                <div className="relative w-56 h-72 md:w-64 md:h-80 mx-auto mb-4">
                   <Image src="/Headshot%20Barbara%20Hineline.JPG" alt="Barbara Hineline" fill className="object-cover" />
                 </div>
-                <p className="font-semibold text-[#0F6397]">Barbara Hineline</p>
-                <p className="text-sm text-stone-600">Café Training Manager</p>
+                <p className="font-semibold text-[#0F6397] text-lg md:text-xl">Barbara Hineline</p>
+                <p className="text-sm md:text-base text-stone-600">Café Training Manager</p>
               </div>
             </div>
 
-            {/* Brendan */}
+            {/* Brendan — slightly smaller */}
             <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
               <div className="text-center">
-                <div className="relative w-48 h-60 mx-auto mb-4">
+                <div className="relative w-48 h-64 md:w-56 md:h-72 mx-auto mb-4">
                   <Image src="/Brendan%20headshot%20(1).JPG" alt="Brendan Bangay" fill className="object-cover" />
                 </div>
-                <p className="font-semibold text-[#0F6397]">Brendan Bangay</p>
+                <p className="font-semibold text-[#0F6397] text-base md:text-lg">Brendan Bangay</p>
                 <p className="text-sm text-stone-600">Asst. Café Manager</p>
               </div>
               <div>
@@ -154,6 +154,7 @@ export default function AboutPage() {
             </div>
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {/* Order matching original page */}
               <div className="border border-stone-200 p-4 text-center">
                 <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/The%20Kahlert%20Foundation%20Check%20Presentation%20(1).jpg" alt="The Kahlert Foundation" fill className="object-contain" /></div>
                 <p className="text-sm font-medium">The Kahlert Foundation</p>
@@ -165,6 +166,10 @@ export default function AboutPage() {
               <div className="border border-stone-200 p-4 text-center">
                 <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Gordon%20Family%20photo%20(1).jpg" alt="The Gordan Family" fill className="object-contain" /></div>
                 <p className="text-sm font-medium">The Gordan Family</p>
+              </div>
+              <div className="border border-stone-200 p-4 text-center">
+                <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/IMG_0114%20(1).JPG" alt="First Financial Federal Credit Union" fill className="object-contain" /></div>
+                <p className="text-sm font-medium">First Financial Federal Credit Union</p>
               </div>
               <div className="border border-stone-200 p-4 text-center">
                 <div className="relative aspect-video mb-3 bg-stone-100"><Image src="/Catalyst-NewLogo_high%20res%20(1).png" alt="Catalyst Communications" fill className="object-contain" /></div>
@@ -179,8 +184,8 @@ export default function AboutPage() {
                 <p className="text-sm font-medium">Harvest Investment Consultants</p>
               </div>
               <div className="border border-stone-200 p-4 text-center col-span-1 sm:col-span-2 md:col-span-3">
-                <p className="text-sm font-medium text-[#0F6397] mb-2">Additional Supporters</p>
-                <div className="text-xs text-stone-600 space-y-1">
+                <p className="text-sm font-medium text-[#0F6397] mb-3">Additional Supporters</p>
+                <div className="text-sm text-stone-600 space-y-1.5">
                   <p>Richard Hook • Donna Cossentino • The Christmas Project – Bob Hodges</p>
                   <p>Michael and Amy Lopez • Teresa Christofferson • Vicki Hineline</p>
                   <p>Robert Starr • Jennifer Fritsch • Dawn Welsh • David Crowley</p>
