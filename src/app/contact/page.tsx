@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import MobileNav from "@/components/MobileNav";
+import FadeOnScroll from "@/components/FadeOnScroll";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -35,9 +36,9 @@ export default function ContactPage() {
       <section className="relative py-20 md:py-28 text-white" style={{backgroundImage: "url(/tkc-cta-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}>
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 container mx-auto px-6 text-center max-w-3xl">
-          <div className="w-12 h-0.5 bg-white mx-auto mb-6" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Reach Out to The Kahlert Café</h1>
-          <p className="text-lg md:text-xl text-stone-200">
+          <div className="w-12 h-0.5 bg-white mx-auto mb-6 animate-fade-in" />
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-delay-1">Reach Out to The Kahlert Café</h1>
+          <p className="text-lg md:text-xl text-stone-200 animate-fade-in-delay-2">
             Submit the form below and a member of our team will get back to you as soon as possible.
           </p>
         </div>
@@ -48,45 +49,47 @@ export default function ContactPage() {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
             {/* Left: Info + Catering */}
-            <div className="lg:col-span-2 space-y-10">
-              <div>
-                <h2 className="text-2xl font-bold text-[#0F6397] mb-3">We Offer Catering To Go!</h2>
-                <p className="text-stone-700 mb-4">
-                  Submit the contact form with more information on your catering order, or contact Barbara Hineline at
-                </p>
-                <a href="tel:4106891016" className="text-[#0F6397] font-semibold text-lg hover:underline">(410) 689-1016</a>
-                <div className="mt-5">
-                  <Link href="/menu" className="inline-block border-2 border-[#0F6397] text-[#0F6397] px-5 py-2 text-sm font-semibold hover:bg-[#0F6397] hover:text-white transition-colors">
-                    View Catering Menu
-                  </Link>
+            <FadeOnScroll className="lg:col-span-2">
+              <div className="space-y-10">
+                <div>
+                  <h2 className="text-2xl font-bold text-[#0F6397] mb-3">We Offer Catering To Go!</h2>
+                  <p className="text-stone-700 mb-4">
+                    Submit the contact form with more information on your catering order, or contact Barbara Hineline at
+                  </p>
+                  <a href="tel:4106891016" className="text-[#0F6397] font-semibold text-lg hover:underline">(410) 689-1016</a>
+                  <div className="mt-5">
+                    <Link href="/menu" className="inline-block border-2 border-[#0F6397] text-[#0F6397] px-5 py-2 text-sm font-semibold hover:bg-[#0F6397] hover:text-white transition-colors">
+                      View Catering Menu
+                    </Link>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-stone-900 mb-3">Catering Policies</h3>
+                  <ul className="text-sm text-stone-700 space-y-2 list-disc list-inside">
+                    <li>Minimum Order of 10</li>
+                    <li>48-Hour Notice Required</li>
+                    <li>Custom Orders Can Be Accommodated with 72-Hour Notice</li>
+                    <li>Pick-Up Available</li>
+                    <li>We Accept All Major Credit Cards</li>
+                    <li>Wheat & Gluten-Free and Vegetarian Options Available</li>
+                  </ul>
+                </div>
+
+                <div className="pt-4 border-t border-stone-200">
+                  <h3 className="font-semibold text-stone-900 mb-2">Visit Us</h3>
+                  <p className="text-stone-700 text-sm">
+                    53 Loveton Circle, Suite #112<br />
+                    Sparks, MD 21152
+                  </p>
+                  <p className="text-sm mt-2"><span className="text-[#0F6397]">Open:</span> Mon – Fri, 8AM – 3PM</p>
+                  <p className="text-sm"><span className="text-red-600">Closed:</span> Sat & Sun</p>
                 </div>
               </div>
-
-              <div>
-                <h3 className="font-semibold text-stone-900 mb-3">Catering Policies</h3>
-                <ul className="text-sm text-stone-700 space-y-2 list-disc list-inside">
-                  <li>Minimum Order of 10</li>
-                  <li>48-Hour Notice Required</li>
-                  <li>Custom Orders Can Be Accommodated with 72-Hour Notice</li>
-                  <li>Pick-Up Available</li>
-                  <li>We Accept All Major Credit Cards</li>
-                  <li>Wheat & Gluten-Free and Vegetarian Options Available</li>
-                </ul>
-              </div>
-
-              <div className="pt-4 border-t border-stone-200">
-                <h3 className="font-semibold text-stone-900 mb-2">Visit Us</h3>
-                <p className="text-stone-700 text-sm">
-                  53 Loveton Circle, Suite #112<br />
-                  Sparks, MD 21152
-                </p>
-                <p className="text-sm mt-2"><span className="text-[#0F6397]">Open:</span> Mon – Fri, 8AM – 3PM</p>
-                <p className="text-sm"><span className="text-red-600">Closed:</span> Sat & Sun</p>
-              </div>
-            </div>
+            </FadeOnScroll>
 
             {/* Right: Form */}
-            <div className="lg:col-span-3">
+            <FadeOnScroll className="lg:col-span-3">
               <div className="bg-white p-8 md:p-10 shadow-sm border border-stone-200">
                 <h2 className="text-xl font-semibold text-stone-900 mb-6">Send Us a Message</h2>
                 <form className="space-y-5" action="#" method="post">
@@ -113,7 +116,7 @@ export default function ContactPage() {
                   </button>
                 </form>
               </div>
-            </div>
+            </FadeOnScroll>
           </div>
         </div>
       </section>
