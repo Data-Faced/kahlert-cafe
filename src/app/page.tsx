@@ -112,7 +112,7 @@ export default function Home() {
         <section className="bg-stone-900 text-white py-16">
           <FadeOnScroll>
             <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1 relative aspect-[3/4] min-h-[420px]">
+              <div className="order-2 md:order-1 relative aspect-[3/4] w-full max-w-sm mx-auto md:max-w-md lg:max-w-sm">
                 <Image src="/tkc-home-food-1.jpg" alt="Farm-to-table food at The Kahlert Café" fill className="object-cover" />
               </div>
               <div className="order-1 md:order-2">
@@ -139,7 +139,7 @@ export default function Home() {
                 </p>
                 <Link href="/about" className="inline-block border-2 border-white px-6 py-3 font-semibold hover:bg-white hover:text-stone-900">MORE ABOUT US</Link>
               </div>
-              <div className="relative aspect-[3/4] min-h-[420px]">
+              <div className="relative aspect-[3/4] w-full max-w-sm mx-auto md:max-w-md lg:max-w-sm">
                 <Image src="/tkc-home-food-2.jpg" alt="Team member preparing food at The Kahlert Café" fill className="object-cover" />
               </div>
             </div>
