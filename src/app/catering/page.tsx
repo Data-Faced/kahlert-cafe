@@ -40,7 +40,7 @@ export default function CateringPage() {
         <div className="relative z-10 container mx-auto px-6 text-center max-w-3xl">
           <div className="w-12 h-0.5 bg-white mx-auto mb-6" />
           <h1 className="text-4xl md:text-5xl font-bold mb-3">Catering To Go</h1>
-          <p className="text-lg text-stone-200">Fresh, farm-to-able catering for your next gathering.</p>
+          <p className="text-lg text-stone-200">Fresh, farm-to-able catering<br />for your next gathering.</p>
         </div>
       </section>
 
