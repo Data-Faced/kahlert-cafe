@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import MobileNav from "@/components/MobileNav";
 import FadeOnScroll from "@/components/FadeOnScroll";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -65,12 +66,12 @@ export default function ContactPage() {
                 <div>
                   <h2 className="text-2xl font-bold text-[#0F6397] mb-3">We Offer Catering To Go!</h2>
                   <p className="text-stone-700 mb-4">
-                    Submit the contact form with more information on your catering order, or contact Barbara Hineline at
+                    For catering orders, please use our dedicated catering inquiry form or contact Barbara Hineline at
                   </p>
                   <a href="tel:4106891016" className="text-[#0F6397] font-semibold text-lg hover:underline">(410) 689-1016</a>
                   <div className="mt-5">
-                    <Link href="/catering" className="inline-block border-2 border-[#0F6397] text-[#0F6397] px-5 py-2 text-sm font-semibold hover:bg-[#0F6397] hover:text-white transition-colors">
-                      View Catering Menu
+                    <Link href="/catering#inquiry" className="inline-block border-2 border-[#0F6397] text-[#0F6397] px-5 py-2 text-sm font-semibold hover:bg-[#0F6397] hover:text-white transition-colors">
+                      Catering Inquiry Form
                     </Link>
                   </div>
                 </div>
@@ -102,29 +103,7 @@ export default function ContactPage() {
             <FadeOnScroll className="lg:col-span-3">
               <div className="bg-white p-8 md:p-10 shadow-sm border border-stone-200">
                 <h2 className="text-xl font-semibold text-stone-900 mb-6">Send Us a Message</h2>
-                <form className="space-y-5" action="#" method="post">
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-1">Full name</label>
-                      <input id="name" name="name" type="text" required className="w-full border-b border-stone-300 focus:border-[#0F6397] focus:outline-none py-2 bg-transparent" />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-stone-700 mb-1">Email address</label>
-                      <input id="email" name="email" type="email" required className="w-full border-b border-stone-300 focus:border-[#0F6397] focus:outline-none py-2 bg-transparent" />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-stone-700 mb-1">Phone number</label>
-                    <input id="phone" name="phone" type="tel" className="w-full border-b border-stone-300 focus:border-[#0F6397] focus:outline-none py-2 bg-transparent" />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-stone-700 mb-1">Enter any additional information</label>
-                    <textarea id="message" name="message" rows={4} className="w-full border-b border-stone-300 focus:border-[#0F6397] focus:outline-none py-2 bg-transparent resize-none" />
-                  </div>
-                  <button type="submit" className="bg-[#0F6397] hover:bg-[#0d5580] text-white px-8 py-3 font-semibold transition-colors">
-                    SUBMIT
-                  </button>
-                </form>
+                <ContactForm />
               </div>
             </FadeOnScroll>
           </div>
