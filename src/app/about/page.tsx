@@ -39,6 +39,7 @@ export default function AboutPage() {
           </Link>
           <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-stone-700">
             <Link href="/" className="hover:text-[#0F6397]">HOME</Link>
+            <Link href="/catering" className="hover:text-[#0F6397]">CATERING</Link>
             <Link href="/menu" className="hover:text-[#0F6397]">MENU</Link>
             <Link href="/about" className="hover:text-[#0F6397]">ABOUT</Link>
             <Link href="/contact" className="hover:text-[#0F6397]">CONTACT</Link>
@@ -234,6 +235,7 @@ export default function AboutPage() {
               <h3 className="text-white font-semibold text-sm tracking-wider uppercase mb-5">Explore</h3>
               <ul className="space-y-3 text-sm">
                 <li><a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Order Online</a></li>
+                <li><Link href="/catering" className="hover:text-white transition-colors">Catering</Link></li>
                 <li><Link href="/menu" className="hover:text-white transition-colors">Menu</Link></li>
                 <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
                 <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
