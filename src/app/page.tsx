@@ -51,6 +51,7 @@ export default function Home() {
             </Link>
             <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-stone-700">
               <Link href="/" className="hover:text-[#0F6397]">HOME</Link>
+              <Link href="/catering" className="hover:text-[#0F6397]">CATERING</Link>
               <Link href="/menu" className="hover:text-[#0F6397]">MENU</Link>
               <Link href="/about" className="hover:text-[#0F6397]">ABOUT</Link>
               <Link href="/contact" className="hover:text-[#0F6397]">CONTACT</Link>
@@ -192,24 +193,20 @@ export default function Home() {
         <footer className="bg-stone-900 text-stone-300">
           <div className="container mx-auto px-6 py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-              {/* Brand */}
               <div className="lg:col-span-1">
                 <Image src="/tkc-header-logo.png" alt="The Kahlert Café" width={170} height={55} className="mb-4 brightness-0 invert" />
                 <p className="text-stone-400 text-sm leading-relaxed">A Richcroft Farm-to-Able Enterprise</p>
               </div>
-
-              {/* Explore */}
               <div>
                 <h3 className="text-white font-semibold text-sm tracking-wider uppercase mb-5">Explore</h3>
                 <ul className="space-y-3 text-sm">
                   <li><a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Order Online</a></li>
+                  <li><Link href="/catering" className="hover:text-white transition-colors">Catering</Link></li>
                   <li><Link href="/menu" className="hover:text-white transition-colors">Menu</Link></li>
                   <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
                   <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
                 </ul>
               </div>
-
-              {/* Legal */}
               <div>
                 <h3 className="text-white font-semibold text-sm tracking-wider uppercase mb-5">Legal</h3>
                 <ul className="space-y-3 text-sm">
@@ -217,8 +214,6 @@ export default function Home() {
                   <li><Link href="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link></li>
                 </ul>
               </div>
-
-              {/* Hours & Location */}
               <div>
                 <h3 className="text-white font-semibold text-sm tracking-wider uppercase mb-5">Hours & Location</h3>
                 <div className="text-sm space-y-2">
@@ -231,8 +226,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* Bottom bar */}
             <div className="mt-14 pt-8 border-t border-stone-700 flex flex-col md:flex-row justify-between items-center gap-6">
               <p className="text-xs text-stone-500 text-center md:text-left">
                 © 2026 The Kahlert Café – A Richcroft Farm-to-Able Enterprise. All Rights Reserved.
