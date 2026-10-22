@@ -172,14 +172,9 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <FadeOnScroll>
           <div className="container mx-auto px-6 max-w-5xl">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-10 gap-4">
-              <div>
-                <div className="w-12 h-0.5 bg-[#0F6397] mb-4" />
-                <h2 className="text-3xl font-bold text-[#0F6397]">With Gratitude</h2>
-              </div>
-              <a href={donateUrl} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#0F6397] text-white px-6 py-3 font-semibold hover:bg-[#0d5580] self-start sm:self-center">
-                HOW TO DONATE
-              </a>
+            <div className="mb-10">
+              <div className="w-12 h-0.5 bg-[#0F6397] mb-4" />
+              <h2 className="text-3xl font-bold text-[#0F6397]">With Gratitude</h2>
             </div>
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -220,6 +215,12 @@ export default function AboutPage() {
                   <p>Kathleen Thurman • Rita Scharmann</p>
                 </div>
               </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <a href={donateUrl} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#0F6397] text-white px-8 py-3 font-semibold hover:bg-[#0d5580]">
+                HOW TO DONATE
+              </a>
             </div>
           </div>
         </FadeOnScroll>
