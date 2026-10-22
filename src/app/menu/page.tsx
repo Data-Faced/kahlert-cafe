@@ -193,9 +193,9 @@ export default function MenuPage() {
       </section>
 
       {/* Sticky Category Nav */}
-      <div className="sticky top-[73px] z-40 bg-white border-b shadow-sm">
-        <div className="container mx-auto px-4">
-          <div className="flex gap-1 overflow-x-auto py-3 text-sm font-medium">
+      <div className="sticky top-[73px] z-40 bg-white border-b shadow-sm relative">
+        <div className="container mx-auto px-4 relative">
+          <div className="flex gap-1 overflow-x-auto py-3 text-sm font-medium scrollbar-none">
             {menuSections.map((section) => (
               <a
                 key={section.id}
@@ -208,6 +208,12 @@ export default function MenuPage() {
             <Link href="/catering" className="whitespace-nowrap px-4 py-2 rounded-full border border-[#0F6397] text-[#0F6397] hover:bg-[#0F6397] hover:text-white">
               Catering
             </Link>
+          </div>
+          {/* Mobile scroll hint */}
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white via-white/80 to-transparent pointer-events-none lg:hidden" />
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 text-sm lg:hidden pointer-events-none flex items-center gap-0.5">
+            <span className="text-xs">more</span>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
           </div>
         </div>
       </div>
@@ -245,7 +251,9 @@ export default function MenuPage() {
         <div className="container mx-auto px-6 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
             <div>
-              <Image src="/tkc-header-logo.png" alt="The Kahlert Café" width={170} height={55} className="mb-4 brightness-0 invert" />
+              <Link href="/">
+                <Image src="/tkc-header-logo.png" alt="The Kahlert Café" width={170} height={55} className="mb-4 brightness-0 invert" />
+              </Link>
               <p className="text-stone-400 text-sm leading-relaxed">A Richcroft Farm-to-Able Enterprise</p>
             </div>
             <div>
