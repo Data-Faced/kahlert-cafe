@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import MobileNav from "@/components/MobileNav";
 import FadeOnScroll from "@/components/FadeOnScroll";
+import CateringInquiryForm from "@/components/CateringInquiryForm";
 
 export const metadata: Metadata = {
   title: "Catering",
@@ -51,7 +52,7 @@ export default function CateringPage() {
             <a href="#lunch" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Lunch</a>
             <a href="#trays" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Trays & Boxes</a>
             <a href="#platters" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Platters</a>
-            <Link href="/contact" className="whitespace-nowrap px-4 py-2 rounded-full border border-[#0F6397] text-[#0F6397] hover:bg-[#0F6397] hover:text-white">Inquire</Link>
+            <a href="#inquiry" className="whitespace-nowrap px-4 py-2 rounded-full border border-[#0F6397] text-[#0F6397] hover:bg-[#0F6397] hover:text-white">Inquire</a>
           </div>
         </div>
       </div>
@@ -59,7 +60,7 @@ export default function CateringPage() {
       <div className="container mx-auto px-6 py-12 max-w-4xl">
         <FadeOnScroll>
           <p className="text-stone-600 text-center mb-12 max-w-2xl mx-auto">
-            Minimum order of 10 • 48-hour notice required • Custom orders available with 72-hour notice. Contact Barbara Hineline at <a href="tel:4106891016" className="text-[#0F6397] font-medium hover:underline">(410) 689-1016</a> or use the contact form.
+            Minimum order of 10 • 48-hour notice required • Custom orders available with 72-hour notice. Contact Barbara Hineline at <a href="tel:4106891016" className="text-[#0F6397] font-medium hover:underline">(410) 689-1016</a> or use the inquiry form below.
           </p>
         </FadeOnScroll>
 
@@ -143,11 +144,13 @@ export default function CateringPage() {
           </div>
         </section>
 
-        <div className="text-center mt-8">
-          <Link href="/contact" className="inline-block bg-[#0F6397] text-white px-8 py-3 font-semibold hover:bg-[#0d5580]">
-            Inquire About Catering
-          </Link>
-        </div>
+        {/* Catering Inquiry Form */}
+        <section id="inquiry" className="scroll-mt-32">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6 pb-2 border-b border-stone-200">Catering Inquiry</h2>
+          <div className="bg-white p-6 md:p-8 border border-stone-200 shadow-sm">
+            <CateringInquiryForm />
+          </div>
+        </section>
       </div>
 
       {/* Footer */}
