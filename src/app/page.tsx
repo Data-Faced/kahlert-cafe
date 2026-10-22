@@ -173,11 +173,11 @@ export default function Home() {
         </section>
 
         {/* Final CTA */}
-        <section className="relative py-20" style={{backgroundImage: "url(/tkc-cta-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}>
+        <section className="relative py-20" style={{backgroundImage: "url(/tkc-cta-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center right"}}>
           <div className="absolute inset-0 bg-black/40" />
           <FadeOnScroll>
-            <div className="relative z-10 container mx-auto px-4 max-w-lg">
-              <div className="bg-white p-8 md:p-10">
+            <div className="relative z-10 container mx-auto px-6 md:px-8 lg:px-12 flex justify-start">
+              <div className="bg-white p-8 md:p-10 max-w-lg">
                 <div className="w-12 h-0.5 bg-[#0F6397] mb-6" />
                 <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6">An Inclusive Culinary Experience.<br />Visit us or order online.</h2>
                 <div className="flex flex-col sm:flex-row gap-4">
