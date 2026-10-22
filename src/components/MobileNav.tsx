@@ -17,20 +17,17 @@ export default function MobileNav() {
         ☰
       </button>
 
-      {/* Overlay + Drawer (always mounted for smooth transitions) */}
       <div
         className={`fixed inset-0 z-[100] lg:hidden transition-opacity duration-300 ease-in-out ${
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         aria-hidden={!open}
       >
-        {/* Backdrop */}
         <div
           className="absolute inset-0 bg-black/40"
           onClick={() => setOpen(false)}
         />
 
-        {/* Drawer */}
         <div
           className={`absolute right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-xl flex flex-col transition-transform duration-300 ease-in-out ${
             open ? "translate-x-0" : "translate-x-full"
@@ -49,6 +46,9 @@ export default function MobileNav() {
           <nav className="flex flex-col px-5 py-6 gap-1 text-lg">
             <Link href="/" onClick={() => setOpen(false)} className="py-3 border-b border-stone-100 hover:text-[#0F6397]">
               Home
+            </Link>
+            <Link href="/catering" onClick={() => setOpen(false)} className="py-3 border-b border-stone-100 hover:text-[#0F6397]">
+              Catering
             </Link>
             <Link href="/menu" onClick={() => setOpen(false)} className="py-3 border-b border-stone-100 hover:text-[#0F6397]">
               Menu
