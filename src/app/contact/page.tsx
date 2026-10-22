@@ -61,7 +61,16 @@ export default function ContactPage() {
       <section className="py-16 bg-stone-50">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
-            <FadeOnScroll className="lg:col-span-2">
+            {/* Contact Form — first on mobile, right on desktop */}
+            <FadeOnScroll className="order-1 lg:order-2 lg:col-span-3">
+              <div className="bg-white p-8 md:p-10 shadow-sm border border-stone-200">
+                <h2 className="text-xl font-semibold text-stone-900 mb-6">Send Us a Message</h2>
+                <ContactForm />
+              </div>
+            </FadeOnScroll>
+
+            {/* Catering + Visit info — second on mobile, left on desktop */}
+            <FadeOnScroll className="order-2 lg:order-1 lg:col-span-2">
               <div className="space-y-10">
                 <div>
                   <h2 className="text-2xl font-bold text-[#0F6397] mb-3">We Offer Catering To Go!</h2>
@@ -97,13 +106,6 @@ export default function ContactPage() {
                   <p className="text-sm mt-2"><span className="text-[#0F6397]">Open:</span> Mon – Fri, 8AM – 3PM</p>
                   <p className="text-sm"><span className="text-red-600">Closed:</span> Sat & Sun</p>
                 </div>
-              </div>
-            </FadeOnScroll>
-
-            <FadeOnScroll className="lg:col-span-3">
-              <div className="bg-white p-8 md:p-10 shadow-sm border border-stone-200">
-                <h2 className="text-xl font-semibold text-stone-900 mb-6">Send Us a Message</h2>
-                <ContactForm />
               </div>
             </FadeOnScroll>
           </div>
