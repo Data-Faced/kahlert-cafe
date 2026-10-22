@@ -7,7 +7,7 @@ import CateringInquiryForm from "@/components/CateringInquiryForm";
 
 export const metadata: Metadata = {
   title: "Catering",
-  description: "Catering to go from The Kahlert Café in Sparks, MD. Breakfast, lunch, sandwich trays, and platters for your event.",
+  description: "Catering to go from The Kahlert Café in Sparks, MD. Breakfast, lunch, sandwich trays, platters, salads, hors d’oeuvres, and more for your event.",
   robots: { index: false, follow: false },
 };
 
@@ -52,6 +52,11 @@ export default function CateringPage() {
             <a href="#lunch" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Lunch</a>
             <a href="#trays" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Trays & Boxes</a>
             <a href="#platters" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Platters</a>
+            <a href="#salads" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Salads</a>
+            <a href="#hors" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Hors d’oeuvres</a>
+            <a href="#sides" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Sides</a>
+            <a href="#desserts" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Desserts</a>
+            <a href="#ordering" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Ordering</a>
             <a href="#inquiry" className="whitespace-nowrap px-4 py-2 rounded-full border border-[#0F6397] text-[#0F6397] hover:bg-[#0F6397] hover:text-white">Inquire</a>
           </div>
         </div>
@@ -138,9 +143,116 @@ export default function CateringPage() {
         {/* Platters */}
         <section id="platters" className="mb-16 scroll-mt-32">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6 pb-2 border-b border-stone-200">Platters</h2>
-          <div>
-            <div className="flex justify-between gap-4"><h3 className="font-semibold">Assorted Skewers with Dips</h3><span className="font-medium whitespace-nowrap">$180 • Serves 10</span></div>
-            <p className="text-sm text-stone-600 mt-2">Beef Satay (GF) • Chicken Sesame • Nashville Hot Chicken • Pork Belly (GF) • Coconut Shrimp • Roasted Root Vegetable (GF, VG)</p>
+          <div className="space-y-6">
+            <div className="pb-6 border-b border-stone-100">
+              <div className="flex justify-between gap-4"><h3 className="font-semibold">Assorted Skewers with Dips</h3><span className="font-medium whitespace-nowrap">$180 • Serves 10</span></div>
+              <p className="text-sm text-stone-600 mt-2">Beef Satay (GF) • Chicken Sesame • Nashville Hot Chicken • Pork Belly (GF) • Coconut Shrimp • Roasted Root Vegetable (GF, VG)</p>
+            </div>
+            <div>
+              <div className="flex justify-between gap-4"><h3 className="font-semibold">Local Sourced Cheese Platter with Kneads Fresh Baguette</h3><span className="font-medium whitespace-nowrap">$180 • Serves 10</span></div>
+              <p className="text-sm text-stone-600 mt-1">Whispering Breeze Havarti • Garlic & Chive • Italian • Cheddar</p>
+              <p className="text-sm text-stone-600 mt-1">Add Prosciutto & Assorted Salami • $260.00</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Salads */}
+        <section id="salads" className="mb-16 scroll-mt-32">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6 pb-2 border-b border-stone-200">Salads</h2>
+          <div className="space-y-6">
+            <div className="pb-6 border-b border-stone-100">
+              <div className="flex justify-between gap-4"><h3 className="font-semibold">The Richcroft Caesar</h3><span className="font-medium whitespace-nowrap">$12.50 / person</span></div>
+              <p className="text-sm text-stone-600 mt-1">Crisp Romaine Lettuce Tossed with Classic Caesar Dressing</p>
+              <p className="text-sm text-stone-600 mt-1">Add: Grilled Chicken +$4 • Grilled Shrimp or Grilled Salmon +$6 per person</p>
+            </div>
+            <div className="pb-6 border-b border-stone-100">
+              <div className="flex justify-between gap-4"><h3 className="font-semibold">Super Foods Salad</h3><span className="font-medium whitespace-nowrap">$12.50 / person</span></div>
+              <p className="text-sm text-stone-600 mt-1">Mixed Greens Topped with Antioxidant-Rich Dried Fruits, Berries & Nuts Tossed with a Light Raspberry Vinaigrette</p>
+            </div>
+            <div>
+              <div className="flex justify-between gap-4"><h3 className="font-semibold">Gordon Green Goddess</h3><span className="font-medium whitespace-nowrap">$8 / person</span></div>
+              <p className="text-sm text-stone-600 mt-1">Mixed Greens Topped with shaved carrots, tri color pepper strips, heirloom cherry tomatoes, cucumber, & red onion with Balsamic Vinaigrette</p>
+              <p className="text-sm text-stone-600 mt-1">Add: Grilled Chicken +$4 • Grilled Shrimp or Grilled Salmon +$6 per person</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Hors d'oeuvres */}
+        <section id="hors" className="mb-16 scroll-mt-32">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6 pb-2 border-b border-stone-200">Assorted Hors d’oeuvres</h2>
+          <div className="space-y-6">
+            <div className="pb-6 border-b border-stone-100">
+              <div className="flex justify-between gap-4"><h3 className="font-semibold">Choose 4</h3><span className="font-medium whitespace-nowrap">$200 • Serves 10</span></div>
+              <ul className="text-sm text-stone-600 mt-2 space-y-1 list-disc list-inside">
+                <li>Coney Island Franks with Sauerkraut & Mustard</li>
+                <li>Mini Cubans</li>
+                <li>Fig & Goat Cheese Flatbread (Veg)</li>
+                <li>Mushrooms with Boursin & Spinach (Veg)</li>
+                <li>Mushrooms with Italian Sausage & Fresh Herbs</li>
+                <li>Coconut Shrimp</li>
+                <li>Miso Glazed Shrimp & Spring Onion (GF)</li>
+                <li>Scallop Wrapped in Bacon (GF)</li>
+                <li>Lamb Gyro in Mini Pita</li>
+                <li>Antipasto Kebab</li>
+                <li>Roasted Vegetable Kebab (GF, VG)</li>
+                <li>Beef Tenderloin with Peppers & Red Onion (GF)</li>
+              </ul>
+            </div>
+            <div>
+              <div className="flex justify-between gap-4"><h3 className="font-semibold">Crab Cake Platter</h3><span className="font-medium whitespace-nowrap">$300 • Serves 10</span></div>
+              <p className="text-sm text-stone-600 mt-1">Maryland Style Crab Cakes with Tartar & Cocktail Sauce</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Sides */}
+        <section id="sides" className="mb-16 scroll-mt-32">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6 pb-2 border-b border-stone-200">Side Dishes</h2>
+          <p className="text-stone-600 mb-4">Additional Sides Available • $4.00 per person</p>
+          <ul className="space-y-2 text-sm text-stone-700 list-disc list-inside">
+            <li>Fresh Fruit Salad</li>
+            <li>White Bean, Tomato & Rosemary Salad</li>
+            <li>Tomatoes, Cucumbers, Feta & Olives</li>
+            <li>Potato Salad</li>
+            <li>Cole Slaw</li>
+          </ul>
+        </section>
+
+        {/* Desserts */}
+        <section id="desserts" className="mb-16 scroll-mt-32">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6 pb-2 border-b border-stone-200">Dessert Selection</h2>
+          <p className="text-stone-600 mb-4">Additional Desserts Available • $4.00 per person</p>
+          <ul className="space-y-2 text-sm text-stone-700 list-disc list-inside">
+            <li>Dessert Shooters</li>
+            <li>French Macaroons (GF)</li>
+            <li>Raspberry & Passion Raw Cake (GF, VG) (+ $2.00)</li>
+            <li>Assorted Cookies</li>
+          </ul>
+        </section>
+
+        {/* Ordering Info */}
+        <section id="ordering" className="mb-16 scroll-mt-32">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6 pb-2 border-b border-stone-200">Ordering Information</h2>
+          <div className="space-y-4 text-stone-700">
+            <p><strong>Barbara Hineline</strong></p>
+            <p>☎ <a href="tel:4106891016" className="text-[#0F6397] hover:underline">410-689-1016</a></p>
+            <p>✉ <a href="mailto:barbarah@richcroft.org" className="text-[#0F6397] hover:underline">barbarah@richcroft.org</a></p>
+
+            <h3 className="font-semibold text-stone-900 mt-6">Catering Policies</h3>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Minimum Order of 10</li>
+              <li>48-Hour Notice Required</li>
+              <li>Custom Orders Can Be Accommodated with 72-Hour Notice</li>
+              <li>Pick-Up Available</li>
+              <li>We Accept All Major Credit Cards</li>
+              <li>Wheat & Gluten-Free and Vegetarian Options Available</li>
+            </ul>
+
+            <p className="text-center text-stone-600 mt-8 italic">✦ Cheers to Coffee & Inclusion ✦</p>
+            <p className="text-sm text-stone-500 mt-2">
+              (The Kahlert Café is proudly tip-free. Donations are appreciated and directly support Richcroft’s programs for people with intellectual and developmental disabilities. Thank you for your support!)
+            </p>
+            <p className="text-xs text-stone-400 mt-4">*The Kahlert Café gratefully uses spices generously donated by The Chesapeake Spice Co.</p>
           </div>
         </section>
 
