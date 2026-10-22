@@ -11,7 +11,7 @@ export default function MobileNav() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="lg:hidden text-[#0F6397] text-2xl"
+        className="lg:hidden text-[#0F6397] text-3xl p-2 -mr-1"
         aria-label="Open menu"
       >
         ☰
@@ -33,11 +33,11 @@ export default function MobileNav() {
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex items-center justify-end px-5 py-4 border-b">
+          <div className="flex items-center justify-end px-4 py-3 border-b">
             <button
               type="button"
               onClick={() => setOpen(false)}
-              className="text-2xl text-stone-500 hover:text-stone-800"
+              className="text-4xl leading-none text-stone-500 hover:text-stone-800 p-2"
               aria-label="Close menu"
             >
               ×
