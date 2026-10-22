@@ -195,7 +195,7 @@ export default function MenuPage() {
       {/* Sticky Category Nav */}
       <div className="sticky top-[73px] z-40 bg-white border-b shadow-sm relative">
         <div className="container mx-auto px-4 relative">
-          <div className="flex gap-1 overflow-x-auto py-3 text-sm font-medium scrollbar-none">
+          <div className="flex gap-1 overflow-x-auto py-3 pr-14 text-sm font-medium scrollbar-none">
             {menuSections.map((section) => (
               <a
                 key={section.id}
