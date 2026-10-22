@@ -193,7 +193,7 @@ export default function MenuPage() {
       </section>
 
       {/* Sticky Category Nav */}
-      <div className="sticky top-[73px] z-40 bg-white border-b shadow-sm relative">
+      <div className="sticky top-0 z-50 bg-white border-b shadow-sm relative">
         <div className="container mx-auto px-4 relative">
           <div className="flex gap-1 overflow-x-auto py-3 pr-14 text-sm font-medium scrollbar-none">
             {menuSections.map((section) => (
@@ -220,7 +220,7 @@ export default function MenuPage() {
       {/* Menu Sections */}
       <div className="container mx-auto px-6 py-10 max-w-4xl">
         {menuSections.map((section) => (
-          <section key={section.id} id={section.id} className="mb-16 scroll-mt-32">
+          <section key={section.id} id={section.id} className="mb-16 scroll-mt-20">
             <h2 className="text-2xl md:text-3xl font-bold text-[#0F6397] mb-6 pb-2 border-b border-stone-200">
               {section.title}
             </h2>
