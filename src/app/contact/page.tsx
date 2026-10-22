@@ -48,7 +48,9 @@ export default function ContactPage() {
             />
             <div className="relative">
               <div className="w-12 h-0.5 bg-white mx-auto mb-6 animate-fade-in" />
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-delay-1">Reach Out to The Kahlert Café</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-delay-1">
+                Reach Out to<br className="hidden md:inline" /> The Kahlert Café
+              </h1>
               <p className="text-lg md:text-xl text-stone-100 animate-fade-in-delay-2">
                 Submit the form below and a member of our team will get back to you as soon as possible.
               </p>
