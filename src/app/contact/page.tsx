@@ -126,7 +126,7 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="text-white font-semibold text-sm tracking-wider uppercase mb-5">Explore</h3>
-              <ul className="space-y-3 text-sm">
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
                 <li><a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Order Online</a></li>
                 <li><Link href="/catering" className="hover:text-white transition-colors">Catering</Link></li>
                 <li><Link href="/menu" className="hover:text-white transition-colors">Menu</Link></li>
