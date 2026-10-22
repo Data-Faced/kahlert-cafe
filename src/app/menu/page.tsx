@@ -188,7 +188,7 @@ export default function MenuPage() {
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="w-12 h-0.5 bg-white mx-auto mb-6" />
           <h1 className="text-4xl md:text-5xl font-bold mb-3">Menu</h1>
-          <p className="text-lg text-stone-200">Fresh, Farm-to-Able Meals Made with Care.</p>
+          <p className="text-lg text-stone-200">Fresh, farm-to-able meals<br />made with care.</p>
         </div>
       </section>
 
