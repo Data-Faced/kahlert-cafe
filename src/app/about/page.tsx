@@ -28,6 +28,8 @@ const teamMembers = [
   { name: "Timothy", img: "/Timothy%20(1).JPG" },
 ];
 
+const donateUrl = "https://secure.givelively.org/donate/richcroft-inc/the-kahlert-cafe-and-farm-to-able-food-truck";
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-stone-900">
@@ -75,9 +77,9 @@ export default function AboutPage() {
               <p className="text-lg md:text-xl mb-8 leading-relaxed text-left animate-fade-in-delay-2">
                 Whether you’re stopping by for a quick pick-me-up or taking your favorite food to go, every purchase supports meaningful employment and opportunity for people with intellectual and developmental disabilities.
               </p>
-              <Link href="/contact" className="inline-block border-2 border-white text-white px-6 py-3 font-semibold hover:bg-white hover:text-stone-900 transition-colors animate-fade-in-delay-3">
+              <a href={donateUrl} target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-white text-white px-6 py-3 font-semibold hover:bg-white hover:text-stone-900 transition-colors animate-fade-in-delay-3">
                 HOW TO DONATE
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -158,9 +160,9 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center mt-12">
-              <Link href="/contact" className="inline-block bg-[#0F6397] text-white px-8 py-3 font-semibold hover:bg-[#0d5580]">
+              <a href={donateUrl} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#0F6397] text-white px-8 py-3 font-semibold hover:bg-[#0d5580]">
                 HOW TO DONATE
-              </Link>
+              </a>
             </div>
           </div>
         </FadeOnScroll>
@@ -175,9 +177,9 @@ export default function AboutPage() {
                 <div className="w-12 h-0.5 bg-[#0F6397] mb-4" />
                 <h2 className="text-3xl font-bold text-[#0F6397]">With Gratitude</h2>
               </div>
-              <Link href="/contact" className="inline-block bg-[#0F6397] text-white px-6 py-3 font-semibold hover:bg-[#0d5580] self-start sm:self-center">
+              <a href={donateUrl} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#0F6397] text-white px-6 py-3 font-semibold hover:bg-[#0d5580] self-start sm:self-center">
                 HOW TO DONATE
-              </Link>
+              </a>
             </div>
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
