@@ -211,8 +211,7 @@ export default function MenuPage() {
           </div>
           {/* Mobile scroll hint */}
           <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white via-white/80 to-transparent pointer-events-none lg:hidden" />
-          <div className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 text-sm lg:hidden pointer-events-none flex items-center gap-0.5">
-            <span className="text-xs">more</span>
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 lg:hidden pointer-events-none">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
           </div>
         </div>
