@@ -47,7 +47,7 @@ export default function CateringPage() {
       {/* Sticky Nav */}
       <div className="sticky top-[73px] z-40 bg-white border-b shadow-sm relative">
         <div className="container mx-auto px-4 relative">
-          <div className="flex gap-1 overflow-x-auto py-3 text-sm font-medium scrollbar-none">
+          <div className="flex gap-1 overflow-x-auto py-3 pr-14 text-sm font-medium scrollbar-none">
             <a href="#breakfast" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Breakfast</a>
             <a href="#lunch" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Lunch</a>
             <a href="#trays" className="whitespace-nowrap px-4 py-2 rounded-full hover:bg-stone-100 text-stone-700 hover:text-[#0F6397]">Trays & Boxes</a>
