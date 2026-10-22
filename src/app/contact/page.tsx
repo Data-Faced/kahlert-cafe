@@ -21,6 +21,7 @@ export default function ContactPage() {
           </Link>
           <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-stone-700">
             <Link href="/" className="hover:text-[#0F6397]">HOME</Link>
+            <Link href="/catering" className="hover:text-[#0F6397]">CATERING</Link>
             <Link href="/menu" className="hover:text-[#0F6397]">MENU</Link>
             <Link href="/about" className="hover:text-[#0F6397]">ABOUT</Link>
             <Link href="/contact" className="hover:text-[#0F6397]">CONTACT</Link>
@@ -36,7 +37,6 @@ export default function ContactPage() {
       <section className="relative py-20 md:py-28 text-white" style={{backgroundImage: "url(/tkc-cta-bg.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 container mx-auto px-6 text-center max-w-3xl">
-          {/* Centered feathered dark text background */}
           <div className="relative inline-block max-w-2xl mx-auto px-4 py-8">
             <div
               className="absolute -inset-10 md:-inset-16 -z-10 rounded-3xl"
@@ -60,7 +60,6 @@ export default function ContactPage() {
       <section className="py-16 bg-stone-50">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
-            {/* Left: Info + Catering */}
             <FadeOnScroll className="lg:col-span-2">
               <div className="space-y-10">
                 <div>
@@ -70,7 +69,7 @@ export default function ContactPage() {
                   </p>
                   <a href="tel:4106891016" className="text-[#0F6397] font-semibold text-lg hover:underline">(410) 689-1016</a>
                   <div className="mt-5">
-                    <Link href="/menu" className="inline-block border-2 border-[#0F6397] text-[#0F6397] px-5 py-2 text-sm font-semibold hover:bg-[#0F6397] hover:text-white transition-colors">
+                    <Link href="/catering" className="inline-block border-2 border-[#0F6397] text-[#0F6397] px-5 py-2 text-sm font-semibold hover:bg-[#0F6397] hover:text-white transition-colors">
                       View Catering Menu
                     </Link>
                   </div>
@@ -100,7 +99,6 @@ export default function ContactPage() {
               </div>
             </FadeOnScroll>
 
-            {/* Right: Form */}
             <FadeOnScroll className="lg:col-span-3">
               <div className="bg-white p-8 md:p-10 shadow-sm border border-stone-200">
                 <h2 className="text-xl font-semibold text-stone-900 mb-6">Send Us a Message</h2>
@@ -145,6 +143,7 @@ export default function ContactPage() {
               <h3 className="text-white font-semibold text-sm tracking-wider uppercase mb-5">Explore</h3>
               <ul className="space-y-3 text-sm">
                 <li><a href="https://order.toasttab.com/online/kalhert-cafe-53-loveton-circle" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Order Online</a></li>
+                <li><Link href="/catering" className="hover:text-white transition-colors">Catering</Link></li>
                 <li><Link href="/menu" className="hover:text-white transition-colors">Menu</Link></li>
                 <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
                 <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
